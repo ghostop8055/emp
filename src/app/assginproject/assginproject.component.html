@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+
+    <!-- Title Page-->
+    <title>Assign Project | Admin Panel | Employee Management System</title>
+
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>EMS</h1>
+            <ul id="navli">
+                <li><a class="homeblack" routerLink="/adminland" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+                <li><a class="homeblack" routerLink="/addemp" routerLinkActive="active" ariaCurrentWhenActive="page">Add Employee</a></li>
+                <li><a class="homeblack" routerLink="/assign" routerLinkActive="active" ariaCurrentWhenActive="page">Assign Project</a></li>
+                <li><a class="homeblack" routerLink="/companies" routerLinkActive="active" ariaCurrentWhenActive="page">Companies</a></li>
+                <li><a class="homeblack" routerLink="/empdetails" routerLinkActive="active" ariaCurrentWhenActive="page">Employee Details</a></li>
+                <li><a class="homeblack" routerLink="/userdetails" routerLinkActive="active" ariaCurrentWhenActive="page">Userdeatils</a></li>
+                <li><a class="homeblack" routerLink="/ps" routerLinkActive="active" ariaCurrentWhenActive="page">ProjectStatus</a></li>
+                <li><a class="homeblack" routerLink="/feedview" routerLinkActive="active" ariaCurrentWhenActive="page">Feedback View</a></li>
+                <li><a class="homeblack" routerLink="/adminlogin" routerLinkActive="active" ariaCurrentWhenActive="page">Logout</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="divider"></div>
+
+
+
+
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Assign Project</h2>
+                    <form action="process/assignp.php" method="POST" enctype="multipart/form-data">
+
+
+                        
+
+                         <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Employee ID" name="eid" required="required">
+                        </div>
+
+
+
+
+
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Project Name" name="pname" required="required">
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="date" placeholder="Fromdate" name="Fromdate" required="required">
+                                   
+                                </div>
+                            </div>
+                            
+                        </div>
+						<div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="date" placeholder="Todate" name="todate" required="required">
+                                   
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+
+
+
+                        <div class="p-t-20">
+                            <button class="btn btn--radius btn--green" type="submit">Assign</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<!-- end document-->
+

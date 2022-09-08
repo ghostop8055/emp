@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In | Employee Management System</title>
+</head>
+<body>
+    <header>
+		<nav>
+			<h1>Employee Management System</h1>
+			<ul id="navli">
+                <li><a class="homeblack" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+                <li><a class="homeblack" routerLink="/adminlogin" routerLinkActive="active" ariaCurrentWhenActive="page">Admin Login</a></li>
+                <li><a class="homeblack" routerLink="/userlogin" routerLinkActive="active" ariaCurrentWhenActive="page">User login</a></li>
+                <li><a class="homeblack" routerLink="/adminlogin" routerLinkActive="active" ariaCurrentWhenActive="page">New Login</a></li>
+
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="divider"></div>
+	<div id="divimg">
+		
+    </div>
+
+	<div class="divider"></div>
+
+	<div class="loginbox">
+    <img src="assets/admin.png" class="avatar">
+        <h1>Login Here</h1>
+        <form >
+            <p>User Id</p>
+            <input type="text" name="mailuid" placeholder="User Id" required="required">
+            <p>Password</p>
+            <input type="password" name="pwd" placeholder="Password" required="required">
+            <li><a class="homeblack" routerLink="/userland" routerLinkActive="active" ariaCurrentWhenActive="page"><input type="submit" name="login-submit" value="Login"></a></li>
+           
+        </form>
+        
+    </div>
+</body>
+</html>
